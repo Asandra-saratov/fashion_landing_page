@@ -1,4 +1,15 @@
-//Global
+/*Colors*/
+:root {
+  --basic_black: #000000;
+  --basic_black-2: #22262A;
+  --basic_red: #CF2929;
+  --basic_white: #FFFFFF;
+  --basic_light_blue: #F2F8FC;
+  --special_light_blue: #E7F5F8;
+  --special_gray: #E5E5E5;
+}
+
+/*Global*/
 
 img {
   max-width: 100%;
@@ -79,15 +90,15 @@ ul {
   font-family: "Poppins", "DejaVu Sans", "Geneva", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 27px;
-  color: #22262A;
-  background-color: #E5E5E5;
+  color: var(--basic_black-2);
+  background-color: var(--special_gray);
   border-radius: 10%;
 }
 
 .page__body {
   min-height: 100%;
-  margin: 0 auto;
-  max-width: 1539px;
+  margin: 0;
+  padding: 0;
 }
 
 .page-header {
@@ -97,11 +108,16 @@ ul {
   padding-bottom: 29px;
   display: grid;
   grid-template-columns: 164px 1fr 148px;
-  background-color: #FFFFFF;
+  background-color: var(--basic_white);
+  border-radius: 50px 50px 0 0;
 }
 
 
 /*Main-nav*/
+
+.main-nav {
+
+}
 
 .main-nav__list {
   display: flex;
@@ -109,6 +125,7 @@ ul {
   justify-content: center;
   text-transform: uppercase;
   font-weight: 400;
+
 }
 
 .main-nav__item {
@@ -120,14 +137,24 @@ ul {
 
 .trend-block {
   background-image: url("../img/background_trend-block.jpg");
+  background-color: var(--special_light_blue);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   height: 745px;
+  display: grid;
+  justify-content: end;
+  padding-right: 13%;
+}
+
+.trend-block-wrapper {
+  position: relative;
 }
 
 .trend-block__title {
   text-transform: uppercase;
   font-weight: 500;
+  margin: 0;
+  padding-top: 426px;
 }
 
 .trend-block__trend {
@@ -135,6 +162,7 @@ ul {
   font-weight: bold;
   font-size: 80px;
   line-height: 120px;
+  margin: 0;
 }
 
 .trend-block__text {
@@ -148,8 +176,54 @@ ul {
   padding-right: 34px;
 }
 
+/*Category*/
+
+.category {
+  background-color: var(--basic_white);
+}
+
+.category__name {
+  margin: 0;
+}
+
+.category__img-wrapper {
+  display: grid;
+
+}
+
+
 /*Button*/
 
 .button {
   text-transform: uppercase;
+}
+
+/*Selection-for-women */
+
+.selection-for-women {
+  background-color: var(--basic_white);
+}
+
+/*Selection-for-men*/
+
+.selection-for-men {
+  background-color: var(--basic_white);
+}
+
+/*Block-styles*/
+
+.block-styles {
+  background-color: var(--basic_white);
+}
+
+/*Collection-link*/
+
+.collection-link {
+background-color: var(--special_light_blue);
+}
+
+/*Footer*/
+
+.page-footer {
+  background-color: var(--special_light_blue);
 }
