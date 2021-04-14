@@ -388,17 +388,12 @@ p {
 
 .category__image-man-1 {
   grid-column: span 2;
-  background-color: var(--special_gray);
-  width: 551px;
   max-height: 286px;
 }
 
 .category__image-man-2 {
   grid-row: span 2;
-  box-sizing: border-box;
   filter: brightness(50%);
-  background-color: var(--special_gray);
-  width: 552px;
   max-height: 574px;
 }
 
@@ -408,15 +403,8 @@ p {
   }
 }
 
-.category__image-girl-1 {
-  background-color: var(--special_gray);
-  width: 262px;
-  max-height: 265px;
-}
-
-.category__image-girl-2 {
-  background-color: var(--special_gray);
-  width: 261px;
+.category__image-girl-1,
+.category__image-girl-2  {
   max-height: 265px;
 }
 
@@ -503,9 +491,7 @@ p {
 }
 
 .selection__item img {
-  background-color: var(--special_gray);
-  width: 268px;
-  height: 371px;
+  max-height: 371px;
 }
 
 .selection__item-wrapper {
@@ -651,8 +637,6 @@ p {
 .block-styles__image-1 {
   align-self: flex-start;
   margin-right: 29px;
-  background-color: var(--special_gray);
-  width: 552px;
   max-height: 652px;
 }
 
@@ -665,8 +649,6 @@ p {
 
 .block-styles__image-2 {
   align-self: flex-start;
-  background-color: var(--special_gray);
-  width: 514px;
   max-height: 451px;
 }
 
@@ -676,8 +658,6 @@ p {
   left: 78%;
   border-left: 22px solid var(--basic_white);
   border-top: 22px solid var(--basic_white);
-  background-color: var(--special_gray);
-  width: 227px;
   max-height: 281px;
   z-index: 2;
 }
