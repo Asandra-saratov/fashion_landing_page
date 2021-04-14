@@ -11,172 +11,261 @@
 
 <body class="page__body">
   <header class="page-header">
+    <button class="toggle toggle--closed" type="button">
+      <span class="visually-hidden">Открыть меню.</span>
+    </button>
     <img class="page-header__logo" src="img/svg/logo-icon.svg" width="164" height="42" alt="Your logo.">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--nojs">
       <ul class="main-nav__list">
-        <li class="main-nav__item">Home</li>
-        <li class="main-nav__item">Shop</li>
-        <li class="main-nav__item">Lookbook</li>
-        <li class="main-nav__item">Features</li>
-        <li class="main-nav__item">Pages</li>
-        <li class="main-nav__item">Blog</li>
+        <li class="main-nav__item">
+          <a href="#">Home</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Shop</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Lookbook</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Features</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Pages</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Blog</a>
+        </li>
       </ul>
     </nav>
 
     <img src="img/icons-heder.png" width="148" height="18" alt="">
+
   </header>
 
-  <main>
+  <main class="page__main">
     <h1 class="visually-hidden">Fashion landing page.</h1>
+
     <section class="trend-block">
-      <h3 class="trend-block__title">New trend</h3>
-      <span class="trend-block__trend">Collusion</span>
-      <p class="trend-block__text">An exclusive selection of this season's trends.</p>
-      <a class="trend-block__link button" href="#">Discover</a>
-      <a class="trend-block__link button" href="#">Shop now</a>
+      <picture>
+        <img src="img/background_trend-block.jpg"
+        srcset="img/background_trend-block@2x.jpg 2x" alt="">
+      </picture>
+
+      <div class="trend-block-wrapper">
+        <h3 class="trend-block__title">New trend</h3>
+        <span class="trend-block__trend">Collusion</span>
+        <p class="trend-block__text">An exclusive selection of this season's trends.</p>
+        <a class="trend-block__link button" href="#">Discover</a>
+        <a class="trend-block__link button" href="#">Shop now</a>
+      </div>
     </section>
 
     <section class="category">
-      <h2 class="category__name">
+      <h3 class="category__name button button--white">
         <a href="#">Category name</a>
-      </h2>
-      <img class="category__img" src="img/category/1-woman.jpg" alt="">
-      <img class="category__img" src="img/category/2-woman.jpg" alt="">
-      <img class="category__img" src="img/category/1-men.jpg" alt="">
-      <img class="category__img" src="img/category/2-men.jpg" alt="">
+      </h3>
+      <div class="category__images-wrapper">
+        <picture class="category__image-man-1">
+          <img src="img/category/1-men.jpg"
+          srcset="img/category/1-men@2x.jpg 2x" alt="">
+        </picture>
+        <picture class="category__image-man-2">
+          <img src="img/category/2-men.jpg"
+          srcset="img/category/2-men@2x.jpg 2x" alt="">
+        </picture>
+        <picture class="category__image-girl-1">
+          <img src="img/category/1-girl.jpg"
+          srcset="img/category/1-girl@2x.jpg 2x" alt="">
+        </picture>
+        <picture class="category__image-girl-2">
+          <img src="img/category/2-girl.jpg"
+          srcset="img/category/2-girl@2x.jpg 2x" alt="">
+        </picture>
+      </div>
     </section>
 
-    <section class="selection-for-women">
-      <h2 class="selection-for-women__title">Womens fashion</h2>
-      <p class="selection-for-women__text">Shop our new arrivals from established brands</p>
-      <ul class="selection-list">
-        <li class="selection-list__item">
-          <img src="img/selection-for-women/img-1.jpg" alt="">
-          <h3>IGURE</h3>
-          <p>Green muscle fit polo shirt</p>
-          <span>$229.00</span> <span>$129.00</span>
-        </li>
-        <li class="selection-list__item">
-          <img src="img/selection-for-women/img-2.jpg" alt="">
-          <h3>IGURE</h3>
-          <p>Green muscle fit polo shirt</p>
-          <span>$229.00</span> <span>$129.00</span>
-        </li>
-        <li class="selection-list__item">
-          <img src="img/selection-for-women/img-3.jpg" alt="">
-          <h3>IGURE</h3>
-          <p>Green muscle fit polo shirt</p>
-          <span>$229.00</span> <span>$129.00</span>
-        </li>
-        <li class="selection-list__item">
-          <img src="img/selection-for-women/img-4.jpg" alt="">
-          <h3>IGURE</h3>
-          <p>Green muscle fit polo shirt</p>
-          <span>$229.00</span> <span>$129.00</span>
-        </li>
-      </ul>
-    </section>
+    <section class="selection">
+      <div class="selection__for-womens">
+        <h2 class="selection__title">Womens fashion</h2>
+        <p class="selection__text">Shop our new arrivals from established brands</p>
+        <ul class="selection__list">
+          <li class="selection__item">
+            <picture>
+              <img src="img/selection-for-women/img-1.jpg" srcset="img/selection-for-women/img-1@2x.jpg 2x" alt="">
+            </picture>
+            <div class="selection__item-wrapper">
+              <h3>IGURE</h3>
+              <p>Green muscle fit polo shirt</p>
+              <span>$229.00</span>
+            </div>
+          </li>
+          <li class="selection__item">
+            <picture>
+              <img src="img/selection-for-women/img-2.jpg" srcset="img/selection-for-women/img-2@2x.jpg 2x" alt="">
+            </picture>
+            <div class="selection__item-wrapper">
+              <h3>IGURE</h3>
+              <p>Green muscle fit polo shirt</p>
+              <span>$229.00</span>
+            </div>
+          </li>
+          <li class="selection__item">
+            <picture>
+              <img src="img/selection-for-women/img-3.jpg" srcset="img/selection-for-women/img-3@2x.jpg 2x" alt="">
+            </picture>
+            <div class="selection__item-wrapper">
+              <h3>IGURE</h3>
+              <p>Green muscle fit polo shirt</p>
+              <span>$229.00</span>
+            </div>
+          </li>
+          <li class="selection__item">
+            <picture>
+              <img src="img/selection-for-women/img-4.jpg" srcset="img/selection-for-women/img-4@2x.jpg 2x" alt="">
+            </picture>
+            <div class="selection__item-wrapper">
+              <h3>IGURE</h3>
+              <p>Green muscle fit polo shirt</p>
+              <span>$229.00</span>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <section class="selection-for-men">
-      <h2 class="selection-for-men__title">Mens fashion</h2>
-      <p class="selection-for-women__text">Shop our new arrivals from established brands</p>
-      <ul class="selection-list">
-        <li class="selection-list__item">
-          <img src="img/selection-for-men/img-man-1.jpg" alt="">
-          <h3>IGURE</h3>
-          <p>Green muscle fit polo shirt</p>
-          <span>$229.00</span> <span>$129.00</span>
-        </li>
-        <li class="selection-list__item">
-          <img src="img/selection-for-men/img-man-2.jpg" alt="">
-          <h3>IGURE</h3>
-          <p>Green muscle fit polo shirt</p>
-          <span>$229.00</span> <span>$129.00</span>
-        </li>
-        <li class="selection-list__item">
-          <img src="img/selection-for-men/img-man-3.jpg" alt="">
-          <h3>IGURE</h3>
-          <p>Green muscle fit polo shirt</p>
-          <span>$229.00</span> <span>$129.00</span>
-        </li>
-        <li class="selection-list__item">
-          <img src="img/selection-for-men/img-man-4.jpg" alt="">
-          <h3>IGURE</h3>
-          <p>Green muscle fit polo shirt</p>
-          <span>$229.00</span> <span>$129.00</span>
-        </li>
-      </ul>
+      <div class="selection__for-mans">
+        <h2 class="selection__title">Mens fashion</h2>
+        <p class="selection__text">Shop our new arrivals from established brands</p>
+        <ul class="selection__list">
+          <li class="selection__item">
+            <picture>
+              <img src="img/selection-for-men/img-man-1.jpg" srcset="img/selection-for-men/img-man-1@2x.jpg 2x" alt="">
+            </picture>
+            <div class="selection__item-wrapper">
+              <h3>IGURE</h3>
+              <p>Green muscle fit polo shirt</p>
+              <span>$229.00</span>
+            </div>
+          </li>
+          <li class="selection__item">
+            <picture>
+              <img src="img/selection-for-men/img-man-2.jpg" srcset="img/selection-for-men/img-man-2@2x.jpg 2x" alt="">
+            </picture>
+            <div class="selection__item-wrapper">
+              <h3>IGURE</h3>
+              <p>Green muscle fit polo shirt</p>
+              <span>$229.00</span>
+            </div>
+          </li>
+          <li class="selection__item">
+            <picture>
+              <img src="img/selection-for-men/img-man-3.jpg" srcset="img/selection-for-men/img-man-3@2x.jpg 2x" alt="">
+            </picture>
+            <div class="selection__item-wrapper">
+              <h3>IGURE</h3>
+              <p>Green muscle fit polo shirt</p>
+              <span>$229.00</span>
+            </div>
+          </li>
+          <li class="selection__item">
+            <picture>
+              <img src="img/selection-for-men/img-man-4.jpg" srcset="img/selection-for-men/img-man-4@2x.jpg 2x" alt="">
+            </picture>
+            <div class="selection__item-wrapper">
+              <h3>IGURE</h3>
+              <p>Green muscle fit polo shirt</p>
+              <span>$229.00</span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="block-styles">
       <h2 class="block-styles__title">Avone styles</h2>
       <p class="block-styles__text">Choose Your Favorite Color</p>
+      <div class="block-styles__images">
+        <picture class="block-styles__image-1">
+          <img src="img/block-styles/bs-img-1.jpg"
+            srcset="img/block-styles/bs-img-1@2x.jpg 2x" alt="">
+        </picture>
+        <picture class="block-styles__image-2">
+          <img src="img/block-styles/bs-img-2.jpg"
+            srcset="img/block-styles/bs-img-2@2x.jpg 2x" alt="">
+        </picture>
+        <picture class="block-styles__image-3">
+          <img src="img/block-styles/bs-img-3.jpg"
+            srcset="img/block-styles/bs-img-3.jpg2x@ 2x" alt="">
+        </picture>
+      </div>
       <a class="block-styles__link" href="#">Show women’s dress</a>
-      <img class="block-styles__img" src="img/block-styles/img-1.jpg" alt="">
-      <img class="block-styles__img" src="img/block-styles/img-2.jpg" alt="">
-      <img class="block-styles__img" src="img/block-styles/img-3.jpg" alt="">
     </section>
 
     <section class="collection-link">
       <h2 class="visually-hidden">Shop collection.</h2>
-      <p class="collection-link__text">Own the day <br>
-        <span>Tachen 19</span>
-      </p>
-      <a href="#">Shop collection</a>
+      <picture>
+        <img src="img/img-collection-link.jpg"
+        srcset="img/img-collection-link@2x.jpg 2x" alt="">
+      </picture>
+      <div class="collection-link__wrapper">
+        <p>Own the day </p>
+        <span>Tachen 19</span> <br>
+        <a class="button" href="#">Shop collection</a>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <img class="page-footer__logo" src="img/svg/logo-icon.svg" width="164" height="42" alt="Your logo.">
-    <div class="page-footer__contacts">
-      <p class="contacts__text">We earned a reputation of being good at what we do.
-        Let us take your online shop to new dimension in
-        success!</p>
-      <address class="contacts__address">Comilla, Bangladesh 3500</address>
-      <div><a href="mailto:kawsarahmed0210@gmail.com">kawsarahmed0210@gmail.com</a><br>
-        01647470457
-      </div>
-      <img src="img/icons-footer.png" alt="">
-    </div>
-
     <div class="page-footer__wrapper">
-      <div class="page-footer__form">
-        <h2>Receive email updates</h2>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <input type="email" name="email" id="email-id" placeholder="Your Email Address" required>
-          <button type="submit">Join</button>
-        </form>
+      <div class="page-footer__contacts">
+        <img class="page-footer__logo" src="img/svg/logo-icon.svg" width="164" height="42" alt="Your logo.">
+        <p>We earned a reputation of being good at what we do.
+          Let us take your online shop to new dimension in
+          success!</p>
+        <address>Comilla, Bangladesh 3500</address>
+        <a href="mailto:kawsarahmed0210@gmail.com">kawsarahmed0210@gmail.com</a>
+        <span>01647470457</span>
+        <img src="img/icons-footer.png" alt="">
       </div>
 
-      <div class="page-footer__information-lists">
-        <div class="page-footer__information-list">
-          <h3>Shop</h3>
-          <ul>
-            <li><a href="">Shop</a></li>
-            <li><a href="">Collection</a></li>
-            <li><a href="">Outlet</a></li>
-            <li><a href="">Lookbook</a></li>
-          </ul>
+      <div class="page-footer__information">
+        <div class="page-footer__form">
+          <h2>Receive email updates</h2>
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <input type="email" name="email" id="email-id" placeholder="Your Email Address" required>
+            <button type="submit">Join</button>
+          </form>
         </div>
 
-        <div class="page-footer__information-list">
-          <h3>Help</h3>
-          <ul>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Privecy Policy</a></li>
-            <li><a href="">Tearms and conditions</a></li>
-            <li><a href="">Return and Exchanges</a></li>
-          </ul>
-        </div>
+        <div class="page-footer__information-lists">
+          <div class="page-footer__information-list">
+            <h3>Shop</h3>
+            <ul>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Collection</a></li>
+              <li><a href="">Outlet</a></li>
+              <li><a href="">Lookbook</a></li>
+            </ul>
+          </div>
 
-        <div class="page-footer__information-list">
-          <h3>About</h3>
-          <ul>
-            <li><a href="">Journal</a></li>
-            <li><a href="">Our Story</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Store Location</a></li>
-          </ul>
+          <div class="page-footer__information-list">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Privecy Policy</a></li>
+              <li><a href="">Tearms and conditions</a></li>
+              <li><a href="">Return and Exchanges</a></li>
+            </ul>
+          </div>
+
+          <div class="page-footer__information-list">
+            <h3>About</h3>
+            <ul>
+              <li><a href="">Journal</a></li>
+              <li><a href="">Our Story</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Store Location</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -185,6 +274,8 @@
       <p>Copyright © 2020 . Your company name All rights reserved</p>
     </div>
   </footer>
+
+  <script src="../source/js/script.js"></script>
 </body>
 
 </html>
