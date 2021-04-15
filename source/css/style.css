@@ -855,6 +855,19 @@ p {
 .page-footer__contacts address {
   font-style: normal;
   padding-bottom: 16px;
+  padding-left: 26px;
+  position: relative;
+}
+
+.page-footer__contacts address::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background: url(../img/svg/location.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  left: 0;
 }
 
 .page-footer__contacts a {
