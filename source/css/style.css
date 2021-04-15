@@ -868,6 +868,7 @@ p {
   width: 15px;
   height: 15px;
   left: 0;
+  top: 2px;
 }
 
 .page-footer__contacts a {
