@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 /*Colors*/
 :root {
   --basic_black: #000000;
@@ -113,6 +120,7 @@ p {
   padding-top: 27px;
   padding-bottom: 29px;
   display: grid;
+  grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
   grid-template-columns: max-content 1fr max-content;
   align-items: center;
   background-color: var(--basic_white);
@@ -131,7 +139,9 @@ p {
   .page-header {
     padding-left: 35px;
     padding-right: 35px;
+    grid-template-columns: -webkit-min-content 1fr 1fr;
     grid-template-columns: min-content 1fr 1fr;
+    grid-template-rows: -webkit-max-content 1fr;
     grid-template-rows: max-content 1fr;
     justify-content: left;
   }
@@ -267,8 +277,10 @@ p {
 
 .trend-block img {
   max-height: 745px;
-  object-fit: cover;
-  object-position: 20% top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 20% top;
+     object-position: 20% top;
   width: 100%;
 }
 
@@ -384,7 +396,8 @@ p {
 .category__images-wrapper {
   display: grid;
   grid-template-columns: 262px 262px 552px;
-  column-gap: 28px;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
   row-gap: 23px;
   justify-content: center;
 }
@@ -408,7 +421,8 @@ p {
 
 .category__image-man-2 {
   grid-row: span 2;
-  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
   max-height: 574px;
 }
 
@@ -730,8 +744,10 @@ p {
 
 .collection-link img {
   max-height: 745px;
-  object-fit: cover;
-  object-position: right top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right top;
+     object-position: right top;
   width: 100%;
 }
 
